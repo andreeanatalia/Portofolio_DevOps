@@ -1,0 +1,43 @@
+To build a strong foundation, focus on the five pillars of DevOps operations: 
+
+Linux system management
+Docker containerization 
+Kubernetes orchestration
+Git version control
+Networking
+
+Essential DevOps Commands
+
+1. Linux & System Troubleshooting
+
+tail -f /var/log/syslog - Follow live system logs.
+df -h - Check disk space in human-readable format.
+du -sh * - Find space occupied by specific folders.
+top or htop - Monitor active CPU and memory usage.
+systemctl restart nginx - Restart system services.
+chmod 755 script.sh - Modify file read/write/execute permissions.
+
+2. Docker Containerization
+
+docker ps -a - List all running and stopped containers.
+docker logs <container_id> - Fetch the logs of a container.
+docker exec -it <container_id> sh - Open an interactive shell inside a container.
+docker system prune -a - Delete all unused containers, networks, and images.
+
+3. Kubernetes Orchestration
+
+kubectl get pods -n <namespace> - View running pods in a specific namespace.
+kubectl logs -f <pod_name> - Stream live logs from a Kubernetes pod.
+kubectl describe pod <pod_name> - Show detailed event history and status of a pod.
+kubectl apply -f deployment.yaml - Deploy infrastructure configuration.
+kubectl logs -f <pod_name> - Stream live logs from a Kubernetes pod.
+kubectl describe pod <pod_name> - Show detailed event history and status of a pod.
+kubectl apply -f deployment.yaml - Deploy infrastructure configuration.
+
+Command Line Memorization Tricks
+
+The Command Comment Method: When running a complex command, add a comment using # at the end.
+For example: history | grep "nginx" #how to find nginx logs. You can later use Ctrl + R or history to search for your own human-readable keyword.
+Piping Chains: Instead of learning commands in isolation, practice chaining them together. 
+For example, ps aux | grep docker uses a pipe (|) to send the output of your process list directly into a text search tool.
+
